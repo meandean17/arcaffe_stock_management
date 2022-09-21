@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/arcaffe_stock_management/static/css/main.c1f6755d.css",
-    "main.js": "/arcaffe_stock_management/static/js/main.15843cb8.js",
+    "main.css": "/arcaffe_stock_management/static/css/main.222462ab.css",
+    "main.js": "/arcaffe_stock_management/static/js/main.14ee71de.js",
+    "static/media/coffee-cup.svg": "/arcaffe_stock_management/static/media/coffee-cup.0847331ac587dc7a7f4a3a2f149de181.svg",
     "index.html": "/arcaffe_stock_management/index.html",
-    "main.c1f6755d.css.map": "/arcaffe_stock_management/static/css/main.c1f6755d.css.map",
-    "main.15843cb8.js.map": "/arcaffe_stock_management/static/js/main.15843cb8.js.map"
+    "main.222462ab.css.map": "/arcaffe_stock_management/static/css/main.222462ab.css.map",
+    "main.14ee71de.js.map": "/arcaffe_stock_management/static/js/main.14ee71de.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1f6755d.css",
-    "static/js/main.15843cb8.js"
+    "static/css/main.222462ab.css",
+    "static/js/main.14ee71de.js"
   ]
 }
