@@ -3,7 +3,6 @@ import { itemService } from '../services';
 import { Item } from '../types';
 
 const getAllItems = async (req: Request, res: Response, next: NextFunction) => {
-  console.log('get all items controller');
   try {
     const items = await itemService.getAllItems();
     res.json(items);
@@ -13,7 +12,6 @@ const getAllItems = async (req: Request, res: Response, next: NextFunction) => {
 };
 
 const addItem = async (req: Request, res: Response, next: NextFunction) => {
-  console.log('add item controller');
   try {
     const item = req.body as Item;
     const addedItem = await itemService.addItem(item);
@@ -23,4 +21,25 @@ const addItem = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-export default { getAllItems, addItem };
+const updateItem = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const id = req.params.itemId as string;
+    const item = req.body as Item;
+    await itemService.updateItem(id, item);
+    res.status(204).end();
+  } catch (err) {
+    next(err);
+  }
+};
+
+const deleteItem = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const id = req.params.itemId as string;
+    await itemService.deleteItem(id);
+    res.status(204).end();
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { getAllItems, addItem, updateItem, deleteItem };
